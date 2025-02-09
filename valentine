@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: white;
+            background-color: #c62828;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+        #surprise {
+            display: none;
+            margin-top: 20px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+<h1>Happy Valentine's Day! 💖</h1>
+<p>Click the button to reveal a surprise!</p>
+<button onclick="revealSurprise()">Click Me!</button>
+<p id="surprise">I love you! 😘</p>
+
+<script>
+    function revealSurprise() {
+        document.getElementById('surprise').style.display = 'block';
+    }
+</script>
+</body>
+</html>
